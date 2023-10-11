@@ -34,11 +34,11 @@ class User < ApplicationRecord
 
   # User#sent_follow_requests: returns rows from the follow requests table associated to this user by the sender_id column
 
-  has_many(:sent_follow_request, :class_name => "FollowRequest", :foreign_key => "sender_id")
+  has_many(:sent_follow_requests, :class_name => "FollowRequest", :foreign_key => "sender_id")
 
   # User#received_follow_requests: returns rows from the follow requests table associated to this user by the recipient_id column
 
-  has_many(:recieved_follow_request, :class_name => "FollowRequest", :foreign_key => "recipient_id")
+  has_many(:received_follow_requests, :class_name => "FollowRequest", :foreign_key => "recipient_id")
 
 
   ### Scoped direct associations
