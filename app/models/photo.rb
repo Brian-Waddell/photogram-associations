@@ -32,7 +32,7 @@ class Photo < ApplicationRecord
 
   # Photo#fans: returns rows from the users table associated to this photo through its likes
 
-  has_many(:likes, :class_name => "Like", :foreign_key => "photo_id" )
+  has_many(:fans, :class_name => "Like", :foreign_key => "photo_id" )
 
  
 end
